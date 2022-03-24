@@ -1,4 +1,13 @@
-# 简易计算器
+<p align="center">
+<img src="https://ren-yc.github.io/assets/ClassTools/EC.png" width="200">
+</p>
+
+<h1 align="center">- 简易计算器 -</h1>
+
+<p align="center">
+<img src="https://img.shields.io/github/v/release/class-tools/Easy-Calculator.svg?logo=iCloud">
+<img src="https://img.shields.io/badge/support-Windows-blue?logo=Windows">
+</p>
 
 一个用 C++ 编写的简易的计算器。
 

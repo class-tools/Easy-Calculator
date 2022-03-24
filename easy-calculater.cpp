@@ -1,5 +1,5 @@
 /*
-Web-Class-Helper Main File 1.0.0
+Easy-Calculator Main File 1.0.1
 This source code file is under MIT License.
 Copyright (c) 2022 Class Tools Develop Team
 Contributors: tigerchen-coder

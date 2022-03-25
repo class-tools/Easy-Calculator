@@ -1,5 +1,5 @@
 /*
-Easy-Calculator Main File 1.0.1
+Web-Class-Helper Main File 1.0.0
 This source code file is under MIT License.
 Copyright (c) 2022 Class Tools Develop Team
 Contributors: tigerchen-coder
@@ -140,12 +140,14 @@ bign zuo(string s){
 	s+=')';
 	for(int i=0;i<=l;i++){
 		c=s[i];
-		if((c<'A'||c>'Z')&&(c<'a'||c>'z')){
+		//cout<<c<<","<<((c<'A'||c>'Z')&&(c<'a'||c>'z')&&c!='_'&&t!="")<<endl;
+		if((c<'A'||c>'Z')&&(c<'a'||c>'z')&&c!='_'&&t!=""){
 			if(mp[t].changed==0){
 				cout<<"ERROR:Variable not exist!"<<endl;
 				return ERR;
 			}
-			now=mp[t];
+			st.push(mp[t]);
+			t="";
 		}
 		if(c=='+'||c=='-'||c=='*'||c=='/'||c==')'){
 			if(st.top()==cheng){
@@ -203,7 +205,7 @@ bign zuo(string s){
 		}
 		//cout<<i<<"ok"<<endl;
 		else if(c>='0'&&c<='9') now=now*10+(c-'0'),get=1;
-		else if(c>='A'&&c<='Z'||c>='a'&&c<='z') t+=c;
+		else if((c>='A'&&c<='Z')||(c>='a'&&c<='z')||c=='_') t+=c;
 		else{
 			cout<<"ERROR:Redunant symbol!"<<endl;
 			return ERR;

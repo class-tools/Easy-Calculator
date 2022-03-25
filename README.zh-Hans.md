@@ -21,6 +21,8 @@
 
 `2 x` 表示计算表达式 x 的值。
 
+`3` 表示退出程序。
+
 ### 贡献名单
 
 | <img src="https://avatars.githubusercontent.com/u/67366523?v=4" width="60px"></br> tigerchen-coder |

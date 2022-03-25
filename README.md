@@ -21,6 +21,8 @@ Commands:
 
 `2 x` indicates the value of the calculated expression x.
 
+`3` means quit the program.
+
 ### Contributors
 
 | <img src="https://avatars.githubusercontent.com/u/67366523?v=4" width="60px"></br> tigerchen-coder |

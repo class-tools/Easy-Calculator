@@ -146,7 +146,7 @@ bign zuo(string s){
 				cout<<"ERROR:Variable not exist!"<<endl;
 				return ERR;
 			}
-			st.push(mp[t]);
+			now=mp[t];get=1;
 			t="";
 		}
 		if(c=='+'||c=='-'||c=='*'||c=='/'||c==')'){
@@ -157,11 +157,11 @@ bign zuo(string s){
 			}
 			if(st.top()==chu){
 				st.pop();
-				if(st.top()==bign(0)){
+				if(now==bign(0)){
 					cout<<"ERROR:Divided by zero!"<<endl;
 					return ERR;
 				}
-				now=now/st.top();
+				now=st.top()/now;
 				st.pop();
 			}
 			//cout<<"QA";
